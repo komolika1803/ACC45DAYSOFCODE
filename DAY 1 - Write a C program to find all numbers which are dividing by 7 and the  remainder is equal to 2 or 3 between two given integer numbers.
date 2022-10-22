@@ -1,0 +1,20 @@
+// Write a C program to find all numbers which are dividing by 7 and the
+//  remainder is equal to 2 or 3 between two given integer numbers. 
+// Expected Output:
+// Input the first integer: 25
+// Input the second integer: 45
+// The numbers are: 30,31,37,38,44
+#include<stdio.h>
+void main() {
+    int a,b;
+    printf("Input the First Integer: ");
+    scanf("%d", &a);
+    printf("Input the Second Integer: ");
+    scanf("%d", &b);
+    printf("The Numbers are: ");
+    for(int i=a;i<b;i++){
+        if(i%7==3||i%7==2){
+            printf("%d,", i);
+        }
+    }
+}
